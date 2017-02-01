@@ -1,0 +1,27 @@
+{
+  "name": "sapnehoapne",
+  "description": "",
+  "main": "app.js",
+  "authors": [
+    "sarab <sarab@walkwel.in>"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "angular/lib/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angularfire": "2.0.2",
+    "angular": "1.5.8",
+    "angular-ui-router": "^0.3.1",
+    "angular-cookies": "1.5.8",
+    "angular-file-upload": "^2.3.4"
+  }
+}

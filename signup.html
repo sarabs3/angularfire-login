@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>sign Up</title>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+  <link rel="stylesheet" href="signup.css" >
+ <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+</head>
+<body>
+<div class="outer">
+  <div class="container">
+    <div class="row"> 
+       <div class="col-md-12">
+         <div class="inner-container">
+          <div class="logo">
+            <img src="img/sapnehoapne.jpg" title="Sapne Ho Apne, Online Marketplace" alt="Sapne Ho Apne, Online Marketplace" />
+          </div>      
+     
+        <div class="col-xs-12 col-sm-12 col-md-12">
+        
+        <div class="sign-up well well-sm">
+        <form id="signup" action="#" method="post" class="form" role="form">
+                <div class="row">
+                    <div class="col-xs-6 col-md-6">
+                        <input id="firstname" class="form-control" name="firstname" placeholder="First Name" type="text"
+                        autofocus />
+                    </div>
+                    <div class="col-xs-6 col-md-6">
+                        <input id="lastname" class="form-control" name="lastname" placeholder="Last Name" type="text" />
+                    </div>
+                </div>
+                <input id="youremail" class="form-control" name="youremail" placeholder="Your Email" type="email" />
+                <input id ="reenteremail" class="form-control" name="reenteremail" placeholder="Re-enter Email" type="email" />
+                <input id="password" class="form-control" name="password" placeholder="New Password" type="password" />
+                <label for="">
+                    Birth Date</label>
+                    <div class="row">
+                        <div class="col-xs-4 col-md-4">
+                            <select id="month" class="form-control">
+                                <option value="">Month</option>
+                                <option value="Jan">Jan</option>
+                                <option value="Feb">Feb</option>
+                                <option value="Mar">Mar</option>
+                                <option value="Apr">Apr</option>
+                                <option value="May">May</option>
+                                <option value="Jun">Jun</option>
+                                <option value="Jul">Jul</option>
+                                <option value="Aug">Aug</option>
+                                <option value="Sep">Sep</option>
+                                <option value="Oct">Oct</option>
+                                <option value="Nov">Nov</option>
+                                <option value="Dec">Dec</option>
+                            </select>
+                        </div>
+                        <div class="col-xs-4 col-md-4">
+                            <select id="day" class="form-control">
+                                <option value="">Day</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                        <div id="year" class="col-xs-4 col-md-4">
+                            <select class="form-control">
+                                <option value="">Year</option>
+                                <option value="2016">2016</option>
+                                <option value="2015">2015</option>
+                                <option value="2014">2014</option>
+                            </select>
+                        </div>
+                    </div>
+                    <label class="radio-inline">
+                        <input type="radio" name="gender" id="inlineCheckbox1" value="male" />
+                        Male
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="gender" id="inlineCheckbox2" value="female" />
+                        Female
+                    </label>
+                    <br />
+                    <br />
+                    <button class="btn btn-lg btn-primary log btn-block" type="submit">
+                        Sign up</button>
+            </form>
+        </div>
+      </div>
+       </div>
+      
+    </div>
+  </div>
+</div>
+</div>
+        <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type='text/javascript' src='https://cdn.firebase.com/v0/firebase.js'></script>
+<script type='text/javascript' src='https://cdn.firebase.com/v0/firebase-simple-login.js'></script>
+    <script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCiQ6hcdP6jSbicYIi1YmpQ5lFbFLeeUWk",
+    authDomain: "sapnehpapne.firebaseapp.com",
+    databaseURL: "https://sapnehpapne.firebaseio.com",
+    storageBucket: "sapnehpapne.appspot.com",
+    messagingSenderId: "426578311502"
+  };
+  firebase.initializeApp(config);
+
+var users = firebase.database().ref().child('users');
+
+
+// submit form
+users.on("value", function(snap) {
+    console.log(snap.val())
+    /*
+    snap.forEach(function(childSnapshot) {
+        var key = childSnapshot.key();
+        var childData = childSnapshot.val();
+    });*/
+});
+$('#signup').click(function(e){
+    e.preventDefault();
+    var firstname = $('#firstname').val();
+    var lastname = $('#lastname').val();
+    var email = $('#youremail').val();
+    var password = $('#password').val();
+    var month = $('#month').val();
+    var day = $('#day').val();
+    var year = $('#year').val();
+    users.push({
+        firstname:firstname,
+        lastname:lastname,
+        email:email,
+        password:password,
+        month:month,
+        day:day,
+        year:year
+    });
+    //alert(firstname);
+})
+</script>
+
+</body>
+</html>

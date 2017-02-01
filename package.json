@@ -1,0 +1,16 @@
+{
+  "name": "sapnehoapne",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "./node_modules/bower/bin/bower install"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bower": "^1.8.0",
+    "express": "^4.14.0",
+    "multer": "^1.2.0"
+  }
+}

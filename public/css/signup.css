@@ -1,0 +1,110 @@
+body{font-family: 'Open Sans', sans-serif;}
+.logo {
+    text-align: center;padding:30px;
+}
+.list-left {
+    background: #f8f8f8 none repeat scroll 0 0;
+    padding: 10px 30px;
+}
+h1.cate {
+    font-size: 18px;
+}
+.list-left ul li {
+    color:#2971cc;
+    font-size:14px;
+    font-weight:normal;
+    list-style:none;
+    line-height:44px;
+}
+.list-left ul {
+    padding: 0;
+}
+.heading1{font-size:20px; color:#2971cc;margin:0;}
+.light{color:#d0d0d0;margin:0;}
+.place-1{font-weight:700;}
+.list-right { border: 1px solid #dedfe0;
+    padding: 19px;margin-bottom:20px;
+}
+
+
+/*login*/
+.outer{width:100%; margin: 0 auto;}
+
+.form-login {
+    background-color: #EDEDED;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
+    border-color:#d2d2d2;
+    border-width: 5px;
+    box-shadow:0 1px 0 #cfcfcf;
+    margin:0 auto;
+    width:50%;
+    
+}
+
+h4 { 
+ border:0 solid #fff; 
+ border-bottom-width:1px;
+ padding-bottom:10px;
+ text-align: center;
+}
+.logo {
+    text-align: center;padding:30px;
+}
+.wrapper {
+    text-align: center !important;
+}
+
+a.log {
+    padding: 6px 21px;
+    text-transform: uppercase;
+    width:33%;
+    background:#3a8800;
+    border:1px solid #3a8800;
+    font-size: 14px;
+    font-weight: 700;
+}
+a.log:hover{border:1px solid #ff9c00;background:#ff9c00;}
+
+
+.form-control {
+    border-radius:3px;margin-bottom: 10px;}
+
+/*signup*/
+.log {
+    padding: 4px 21px;
+    text-transform: uppercase;
+    width:33%;
+    margin:0 auto;
+    background:#3a8800;
+    border:1px solid #3a8800;
+    font-size: 14px;
+}
+
+button.log:hover{border:1px solid #ff9c00;background:#ff9c00;}
+/*ads*/
+.ads-container {
+    margin: 0 auto;
+    width: 70%;
+}
+.form-group {
+    margin-bottom: 20px;
+    padding-bottom: 38px;
+}
+.logo {
+    text-align: center;padding:30px;
+}
+button.log {
+    padding: 6px 21px;
+    text-transform: uppercase;
+    width:33%;
+    margin:0 auto;
+    background:#3a8800;
+    border:1px solid #3a8800;
+    font-size: 14px;
+    font-weight: 700;
+}
+button.log:hover{border:1px solid #ff9c00;background:#ff9c00;}

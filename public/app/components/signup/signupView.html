@@ -1,0 +1,99 @@
+<div class="outer login">
+    <div class="row"> 
+        <div class="col s12 m8 offset-m2">     
+            <div class="sign-up well well-sm">
+                <div class="logo">
+                    <a ui-sref="base.home">
+                        <img src="img/sapnehoapne.jpg" title="Sapne Ho Apne, Online Marketplace" alt="Sapne Ho Apne, Online Marketplace" />
+                    </a>
+                </div>               
+                <p data-ng-show="signedIn"> You have already logged in</p>
+                <form data-ng-hide="signedIn" id="signup" data-ng-submit="signup();" class="form" role="form">
+                    <div class="row">
+                        <div class="col s12 m6 input-field">
+                            <input data-ng-model="user.firstname" id="firstname" name="firstname" type="text"
+                            autofocus />
+                            <label for="firstname">First Name</label>
+                        </div>
+                        <div class="input-field col s12 m6">
+                            <input data-ng-model="user.lastname" id="lastname" name="lastname" type="text" />
+                            <label for="lastname">Last Name</label>
+                        </div>
+                        <div class="input-field col s12 m6">
+                            <input data-ng-model="user.refer" id="referCode" name="referCode" type="text" />
+                            <label for="referCode">Refferal Code</label>
+                        </div>
+                        <div class="input-field col s12 m6">
+                            <input data-ng-model="user.mobile" id="mobile" name="mobile" type="text" />
+                            <label for="mobile">Mobile No.</label>
+                        </div>
+                        <div class="input-field col s12 m6">
+                            <input data-ng-model="user.email" id="youremail" name="youremail" type="email" />
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="input-field col s12 m6">
+                            <input data-ng-model="user.password" id="password" class="input-field" name="password" type="password" />
+                            <label for="password">Password</label>
+                        </div>
+                    </div>
+                    <!-- <label for="">
+                        Birth Date</label>
+                        <div class="row">
+                            <div class="col-xs-4 col-md-4">
+                                <select id="month" class="form-control">
+                                    <option value="">Month</option>
+                                    <option value="Jan">Jan</option>
+                                    <option value="Feb">Feb</option>
+                                    <option value="Mar">Mar</option>
+                                    <option value="Apr">Apr</option>
+                                    <option value="May">May</option>
+                                    <option value="Jun">Jun</option>
+                                    <option value="Jul">Jul</option>
+                                    <option value="Aug">Aug</option>
+                                    <option value="Sep">Sep</option>
+                                    <option value="Oct">Oct</option>
+                                    <option value="Nov">Nov</option>
+                                    <option value="Dec">Dec</option>
+                                </select>
+                            </div>
+                            <div class="col-xs-4 col-md-4">
+                                <select id="day" class="form-control">
+                                    <option value="">Day</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </div>
+                            <div id="year" class="col-xs-4 col-md-4">
+                                <select class="form-control">
+                                    <option value="">Year</option>
+                                    <option value="2016">2016</option>
+                                    <option value="2015">2015</option>
+                                    <option value="2014">2014</option>
+                                </select>
+                            </div>
+                        </div>
+                        <label class="radio-inline">
+                            <input type="radio" name="gender" id="inlineCheckbox1" value="male" />
+                            Male
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="gender" id="inlineCheckbox2" value="female" />
+                            Female
+                        </label> -->
+                        <br />
+                        <br />
+                        <div class="row">
+                            <div class="col s6 m3">
+                                <button class="btn waves-effect waves-light" type="submit">Sign up</button>
+                                </div>
+                             <div class="col s6 m3">
+                                <button class="btn waves-effect waves-light" type="button" ui-sref="login">Login</button>     
+                             </div> 
+                        </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

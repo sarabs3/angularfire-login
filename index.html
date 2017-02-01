@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Auth App</title>
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0 ">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans" rel="stylesheet"> 
+		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="css/materialize.min.css" />
+		<link rel="stylesheet" href="css/signup.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body data-ng-app="sapne">
+		<div ui-view=""></div>
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="assets/lib/angular/angular.js"></script>
+		<script type="text/javascript" src="js/materialize.min.js"></script>
+		<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-materialize/0.2.1/angular-materialize.min.js"></script> -->
+		<script type="text/javascript" src="js/angular-materialize.min.js"></script>
+		<!-- <script type="text/javascript" src="js/bootstrap.min.js"></script> -->
+
+		<script type="text/javascript" src="assets/lib/angular-ui-router/release/angular-ui-router.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-cookies.js"></script>
+		<script type="text/javascript" src="assets/lib/angular-file-upload/dist/angular-file-upload.js"></script>
+
+		<!-- Firebase  https://www.gstatic.com/firebasejs/3.4.1/firebase.js -->
+		<script src="assets/js/firebase.js"></script>
+		<!-- AngularFire https://cdn.firebase.com/libs/angularfire/2.1.0/angularfire.min.js-->
+		<script src="assets/js/angularFire.js"></script>
+		<script type="text/javascript" src="app/app.module.js"></script>
+		<script type="text/javascript" src="app/app.routes.js"></script>
+		<!-- master module -->
+		<script type="text/javascript" src="app/shared/master/masterService.js"></script>
+		<script type="text/javascript" src="app/shared/master/masterController.js"></script>
+		<!-- home module -->
+		<script type="text/javascript" src="app/shared/home/homeController.js"></script>
+		<!-- login module -->
+		<script type="text/javascript" src="app/components/login/loginService.js"></script>
+		<script type="text/javascript" src="app/components/login/loginController.js"></script>
+		<!-- signup module -->
+		<script type="text/javascript" src="app/components/signup/signupService.js"></script>
+		<script type="text/javascript" src="app/components/signup/signupController.js"></script>
+		<!-- classified module -->
+		<script type="text/javascript" src="app/components/classified/classifiedService.js"></script>
+		<script type="text/javascript" src="app/components/classified/classifiedController.js"></script>
+		<!-- products module -->
+		<script type="text/javascript" src="app/components/products/productsService.js"></script>
+		<script type="text/javascript" src="app/components/products/productsController.js"></script>
+		<!-- users module -->
+		<script type="text/javascript" src="app/components/users/usersService.js"></script>
+		<script type="text/javascript" src="app/components/users/usersController.js"></script>
+		<!-- account module -->
+		<script type="text/javascript" src="app/components/account/accountService.js"></script>
+		<script type="text/javascript" src="app/components/account/accountController.js"></script>
+		<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCiQ6hcdP6jSbicYIi1YmpQ5lFbFLeeUWk",
+    authDomain: "sapnehpapne.firebaseapp.com",
+    databaseURL: "https://sapnehpapne.firebaseio.com",
+    storageBucket: "sapnehpapne.appspot.com",
+    messagingSenderId: "426578311502"
+  };
+  firebase.initializeApp(config);
+</script>
+	</body>
+</html>

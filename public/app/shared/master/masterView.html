@@ -1,0 +1,28 @@
+<header class="">
+	<div class="container">
+		<nav>	
+			<div class="nav-wrapper">
+				<a href="#" data-activates="mobile-nav" data-sidenav="left" data-menuwidth="500" data-closeonclick="false" class="button-collapse"><i class="material-icons">menu</i></a>	
+				<!-- <a href="#" data-activates="mobile-nav" data-sidenav="left" data-menuwidth="500" data-closeonclick="false" class="button-collapse" >Show side-nav</a> -->
+				<a class="brand-logo logo" ui-sref="base.home" style="color:#000">
+					Auth App 
+				</a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li data-ng-show="signedIn"><a ng-click="signout()" class="btn">Signout</a></li>
+
+					<li data-ng-hide="signedIn"><a ui-sref="signup" class="btn">Signup</a></li>
+					<li data-ng-hide="signedIn"><a ui-sref="login" class="btn">Login</a></li>
+				</ul>
+				<ul id="mobile-nav" class="side-nav">
+					<li data-ng-show="signedIn"><a ng-click="signout()" class="btn">Signout</a></li>
+
+					<li data-ng-hide="signedIn"><a ui-sref="signup" class="btn">Signup</a></li>
+					<li data-ng-hide="signedIn"><a ui-sref="login" class="btn">Login</a></li>
+				</ul>
+			</div>
+		</nav>
+
+	</div>
+</header>
+
+<div data-ui-view=""></div>

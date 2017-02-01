@@ -1,0 +1,24 @@
+		<section id="tree">	
+			<div class="container">	
+				<div class="row">
+					<div class="col s12">
+						<a data-ng-show="signedIn" ui-sref="base.account.refer" class="btn">Refer a Friend</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col m12" >
+						<table class="table table-bordered">
+							<tr>
+								<td>Referrals</td>
+							</tr>
+							<tr data-ng-repeat="t in tree">
+								<td><a ui-sref="base.account.home({id:t.id})">{{t.name}}</a></td>
+							</tr>
+						</table>
+					</div>
+					<div class="co m12">
+						<p data-ng-show="noReferal">You have not refer any friend yet.</p>	
+					</div>
+				</div>
+			</div>
+		</section>

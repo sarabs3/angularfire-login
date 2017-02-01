@@ -1,0 +1,36 @@
+<div class="outer login">
+  <div class="row"> 
+    <div class="col s12 m8 offset-m2">
+      <div class="loginContainer">
+        <div class="logo">
+          <a ui-sref="base.home">
+              <img src="img/sapnehoapne.jpg" title="Sapne Ho Apne, Online Marketplace" alt="Sapne Ho Apne, Online Marketplace" />
+          </a>
+        </div>      
+        <div class="col-xs-12 col-sm-12 col-md-12">
+          <p data-ng-show="signedIn"> You have already logged in</p>
+          <form data-ng-hide="signedIn" id="signup" data-ng-submit="login();" class="form" role="form">
+            <div class="row">
+              <div class="col s12 m6 input-field">
+                <input data-ng-model="user.email" id="youremail" name="youremail" type="email" autofocus/>
+                <label for="firstname">Email</label>
+              </div>
+              <div class="input-field col s12 m6">
+                <input id="password" data-ng-model="user.password" name="password" type="password" />
+                <label for="lastname">Password</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s6 m3">
+                  <button class="btn waves-effect waves-light" type="submit">Login</button>
+                  </div>
+               <div class="col s6 m3">
+                  <button class="btn waves-effect waves-light" type="button" ui-sref="signup">Signup</button>  
+               </div> 
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

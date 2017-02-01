@@ -1,0 +1,127 @@
+/* resets */
+body{
+	font-family: 'open Sans',arial;
+}
+h3{
+	font-size: 2rem;
+}
+nav{
+	background-color: transparent;
+	box-shadow: none;
+}
+nav .button-collapse{
+	color: #000;
+}
+@import 'resets';
+/* resets */
+header,section,footer{
+	float: left;
+	width: 100%;
+	display: block;
+}
+/* header */
+header{
+	padding: 22px 0 0;
+}
+header.sticky{
+	position: fixed;
+	z-index: 99;
+	border-bottom: 1px solid #ddd;
+	background-color:#fff; 
+}
+/* nav */
+nav{
+	background-color: transparent;
+	box-shadow: none;
+	color: #666; 
+}
+nav ul li a{
+	color: #666;
+}
+#banner{
+	background-image:url('../img/banner-cafe.jpg');
+	height: 550px; 
+	padding-top: 220px;
+}
+#banner.small{
+	height: 250px;
+	padding-top: 150px;
+}
+#banner .banner__text{
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+	font-size:38px;
+	font-weight: 400;
+}
+#banner .page__title{
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+	font-size:38px;
+	font-weight: 400;
+}
+#banner .banner__text2{
+	font-weight: 700;
+	font-size:48px;
+}
+#about{
+	padding: 80px 0;
+}
+#about p{
+	text-align: center;	
+	font-size:16px;
+	line-height: 28px;
+}
+#content{
+	background-color: #eee;
+	padding: 30px 0;
+}
+article{
+	background-color: #fff;
+	width: 100%;
+}
+.article{
+	float: left;
+	box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
+}
+article > div{
+	float: left;
+}
+article >.article__text{
+	padding: 40px;
+	width: 40%;
+}
+article >.article__text p{
+	line-height: 24px;
+}
+article.article > .article__image{
+	height: 350px;
+	background-size: 100%;
+	width: 60%;
+	background-repeat: no-repeat;
+}
+.your_business_online .article__image{
+	background-image: url('../img/business.jpg');
+	background-repeat: no-repeat;
+}
+.your .article__image{
+	background-image: url('../img/your.jpg');
+}
+footer{
+	background-color: #222;
+}
+footer p {
+	color: white;
+	padding: 20px 0 0px;
+}
+/* classifieds */
+#classified{
+	margin-top: 60px;
+}
+/* login */
+@import 'login';
+/* signup */
+@import 'signup';
+/* products */
+@import 'products';
+/* responsive */
+@import 'responsive';
